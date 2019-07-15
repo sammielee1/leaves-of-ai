@@ -1,23 +1,42 @@
+
+Result Size: 1425 x 1493
 <html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <link rel='stylesheet' href='../static/style.css'>
-        <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-        <script src='../static/client.js'></script>
-    </head>
-    <body>
-        <div>
-            <div class='center'>
-                <div class='title'>leaves of ai</div>
-                <div class='description'>Get your daily Walt Whitman poetry using Artifical Intelligence</div>
-                <div class='content'>
+<!DOCTYPE html>
+<html>
+<title>AI Author</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel='stylesheet' href='../static/style.css'>
+ <script src='../static/client.js'></script>
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
+.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+</style>
+<body>
+​
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Writing</h1>
+    <h2>Let AI Write for you. Just write a phase or two.</h2>
+    <h2><b>Stardate 2019</b></h2>
+    <div class='content'>
                     <div class="row">
                         <p class="img-on-left">
                             <img src = "static/scroll.png" height="220" width="250" alt = "pin_image" />
                         </p>
                         <span class="input">
-                            <input id="text-input" onchange='showText(this)' type="text" placeholder="Type the first few words of the poem" maxlength="20">
+                            <input id="text-input" onchange='showText(this)' type="text" placeholder="Type here." maxlength="101">
                             <span></span>   
                         </span>                        
                         <p class="img-on-right">
@@ -25,13 +44,38 @@
                         </p>                                          
                     </div>
                     <div class='analyze'>
-                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Generate Poem</button>
+                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Generate</button>
                     </div>
                     <div class='result-label'>
                         <label id='result-label'></label>
                     </div>
                 </div>
-            </div>
-        </div>
-    </body>
+  </div>
+</header>
+​
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Us</a>
+    <a href="#bitcoin" style="width:25%" class="w3-bar-item w3-button">Bitcoin</a>
+    <a href="#contact" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Contact</a>
+  </div>
+</div>
+​
+​
+​
+  </div>
+</div>
+​
+​
+​
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+​
+</body>
 </html>
+​
